@@ -10,5 +10,5 @@ run for the prod and for all the locations
 
 ```bash
 gcloud auth application-default login
-python lab6.1-cleanup-templates.py --project ts-labs-npp-ai-sec-dev --location us-central1
+python lab6.1-cleanup-templates.py --project ts-labs-npp-ai-sec-prd --location us-central1
 ```
