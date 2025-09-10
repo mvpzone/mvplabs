@@ -37,7 +37,7 @@ All instructions for this lab are contained within the `Lab 6.1 - Threatspace- P
 
 1. Open an Incognito browser window
 2. Go to https://coloab.research.google.com
-3. Open Notebook -> github -> mvplabs/Lab_6_1_Model_Armor  <to-be-updated-finally>
+3. Open Notebook -> github -> mvpzone/mvplabs/Lab_6_1_Model_Armor  <to-be-updated-finally>
 4. Open the `Lab 6.1 - Threatspace- Prompt Injection and Guardails - Model Armor -Lab.ipynb` file in a incognito browser 
 5. Follow the step-by-step instructions provided in the notebook.
 
