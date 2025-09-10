@@ -40,18 +40,3 @@ All instructions for this lab are contained within the `Lab 6.1 - Threatspace- P
 3. Open Notebook -> github -> mvpzone/mvplabs/Lab_6_1_Model_Armor/Lab_6_1_Threatspace_Prompt_Injection_and_Guardails_Model_Armor_Lab.ipynb
 4. Open the `Lab 6.1 - Threatspace- Prompt Injection and Guardails - Model Armor -Lab.ipynb` file in a incognito browser 
 5. Follow the step-by-step instructions provided in the notebook.
-
-## 4. Admin - Setup
-1.  Enable ModelArmor API in the project (one-time)
-2.  Assign "modelarmor.admin" role to all the students
-
-## 5. Admin  - Cleanup 
-
-To clean up your environment and remove any resources created during this lab, run the provided reset script:
-
-run for the prod and for all the locations
-
-```bash
-gcloud auth application-default login
-python lab6.1-cleanup-templates.py --project ts-labs-npp-ai-sec-dev --location us-central1
-```
