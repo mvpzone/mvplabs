@@ -1,4 +1,4 @@
-# Lab Title: [Your Lab Title Here]
+# Lab Title: Prompt Injection and Guardrails with Model Armor
 
 **Author:** [Your Name]
 **Estimated Time:** [e.g., 45 minutes]
