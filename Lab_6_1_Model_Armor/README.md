@@ -1,34 +1,45 @@
 # Lab Title: Prompt Injection and Guardrails with Model Armor
 
-**Author:** [Your Name]
-**Estimated Time:** [e.g., 45 minutes]
+**Author:** Devon Beanish & Anil Kumar Sirikande
+**Estimated Time:** 45 minutes
 
 ---
 
 ## 1. Overview
 
-In this lab, you will learn how to [briefly describe the main takeaway of the lab]. You will walk through the process of [describe the high-level steps, e.g., setting up a service, running a script, analyzing the output].
+This lab provides a hands-on introduction to the Model Armor service, focusing on the creation and configuration of security templates. You will begin by defining a new template and then configuring its various safety filters to establish a baseline for model protection.
+
+Once the template is configured, you will evaluate its effectiveness by submitting a series of test prompts designed to simulate common threats. These tests will include examples of Prompt Injection, Jailbreaking, and the submission of Sensitive Data (PII). By analyzing the detailed responses from the service, you will observe how Model Armor detects and mitigates these risks in real-time.
+
 
 ### Learning Objectives
 
 Upon completion of this lab, you will be able to:
 
-* [Objective 1, e.g., Understand the core concepts of X]
-* [Objective 2, e.g., Deploy a Y using Z]
-* [Objective 3, e.g., Analyze the results of A]
+* Objective 1:  Understand the role of Model Armor Service and its use of Security templates for LLM Protection
+* Objective 2: Create, Configure and update a security template with various safety and content filters
+* Objective 3: Test the template's effectiveness against common attacks, including Prompt Injection, Jailbreaking, and Malicious URIs
+* Objective 4:  Analyze and interpret the service's response to confirm the successful detection of security threats
+
+
 
 ## 2. Prerequisites
 
-* [Prerequisite 1, e.g., Basic knowledge of Python]
-* [Prerequisite 2, e.g., A Google Cloud project]
-* [Prerequisite 3, e.g., `gcloud` CLI installed and configured]
+* Prerequisite 1: Basic knowledge of Python & familiarity with Google Colab Notebooks, such as knowing how to execute code cells
+* Prerequisite 2: Basic understanding of LLM and the various threats to LLM like Prompt Injection and Jailbreak
+* Prerequisite 3: A Threatspace Google cloud Account, Project id, location to be used
+* Prerequisite 4: An Updated version of Chrome/firefox required to access the Google Colab environment
+
 
 ## 3. Lab Instructions
 
-All instructions for this lab are contained within the `lab-notebook.ipynb` Jupyter Notebook.
+All instructions for this lab are contained within the `Lab 6.1 - Threatspace- Prompt Injection and Guardails - Model Armor -Lab.ipynb` Jupyter Notebook.
 
-1. Open the `lab-notebook.ipynb` file.
-2. Follow the step-by-step instructions provided in the notebook.
+1. Open an Incognito browser window
+2. Go to https://coloab.research.google.com
+3. Open Notebook -> github -> mvplabs/Lab_6_1_Model_Armor  <to-be-updated-finally>
+4. Open the `Lab 6.1 - Threatspace- Prompt Injection and Guardails - Model Armor -Lab.ipynb` file in a incognito browser 
+5. Follow the step-by-step instructions provided in the notebook.
 
 ## 4. Cleanup
 
