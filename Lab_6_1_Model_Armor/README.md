@@ -33,7 +33,7 @@ Upon completion of this lab, you will be able to:
 
 ## 3. Lab Instructions
 
-All instructions for this lab are contained within the `Lab 6.1 - Threatspace- Prompt Injection and Guardails - Model Armor -Lab.ipynb` Jupyter Notebook.
+All instructions for this lab are contained within the `Lab 6.1 - Threatspace- Prompt Injection and Guardrails - Model Armor -Lab.ipynb` Jupyter Notebook.
 
 1. Open an Incognito browser window
 2. Go to https://coloab.research.google.com
