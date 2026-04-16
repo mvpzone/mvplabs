@@ -1,0 +1,15 @@
+[project]
+name = "pyful-play"
+description = "ADK playground — quick prototypes, demos, upstream reproductions"
+version = "0.1.0"
+readme = "README.md"
+authors = [{ name = "Vinesh" }]
+requires-python = ">=3.13"
+dependencies = [
+    "google-adk>=1.28.0",
+    "google-auth",
+    "google-cloud-iamconnectorcredentials",
+    "uvicorn",
+    "a2a-sdk",
+    "python-dotenv",
+]

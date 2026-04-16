@@ -15,6 +15,7 @@ The primary goals of this project are:
 
 This repository is organized into different labs and recipes, each focusing on a specific technology or use case. You can find examples for various platforms and tools, including:
 
+* [ADK Recipes](recipes/) -- self-contained Google ADK agent recipes (Maps MCP, Search, Agent Registry)
 * Security tools and practices
 * And much more...
 
