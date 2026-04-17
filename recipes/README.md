@@ -11,6 +11,7 @@ Self-contained [Google ADK](https://adk.dev) agent recipes. Each recipe is a sin
 | [maps](maps/) | Places, weather, and routes | Maps MCP (Grounding Lite) | Vertex AI + Maps API |
 | [registry](registry/) | Discover and invoke registered agents | Agent Registry MCP | Vertex AI + Agent Registry API |
 | [bigquery](bigquery/) | Query and explore datasets | BigQuery MCP | Vertex AI + BigQuery API |
+| [gcs](gcs/) | List buckets, read objects via SDK | `google-cloud-storage` (no MCP) | Vertex AI + Storage API |
 | [mcp](mcp/) | Custom MCP server on Cloud Run | echo, trace, time (FastMCP) | Vertex AI + Cloud Run MCP server |
 
 ## Quick Start
@@ -104,6 +105,7 @@ recipes/
   maps/agent.py           # Maps MCP integration
   registry/agent.py       # Agent Registry MCP
   bigquery/agent.py       # BigQuery MCP
+  gcs/agent.py            # Google Cloud Storage SDK (no MCP)
   mcp/agent.py            # Custom MCP server (Cloud Run)
   mcp/idtoken.py          # ID token credential acquisition
   mcpserver/server.py     # FastMCP server (deploy target for mcp recipe)
