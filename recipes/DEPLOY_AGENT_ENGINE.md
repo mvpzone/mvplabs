@@ -84,6 +84,38 @@ Agent Engine supports two identity modes:
 
 For agent identity setup and IAM configuration, see [Agent Identity](https://docs.cloud.google.com/agent-builder/agent-engine/agent-identity).
 
+### Agent Identity IAM
+
+Agent identity uses SPIFFE principals. You can grant roles per-agent or project-wide:
+
+```
+# Per-agent principal
+principal://<trust-domain>/resources/aiplatform/projects/<PROJECT_NUMBER>/locations/<REGION>/reasoningEngines/<AE_ID>
+
+# All agents in project (principalSet)
+principalSet://<trust-domain>/attribute.platformContainer/aiplatform/projects/<PROJECT_NUMBER>
+```
+
+**Recommended base roles** for agent identity (grant via principalSet for all agents):
+
+- `roles/serviceusage.serviceUsageConsumer`, `roles/browser`
+- `roles/logging.logWriter`, `roles/monitoring.metricWriter`, `roles/monitoring.viewer`
+- `roles/cloudtrace.agent`, `roles/telemetry.tracesWriter`
+- `roles/aiplatform.user`, `roles/aiplatform.sessionUser`, `roles/aiplatform.memoryUser`
+- `roles/mcp.toolUser`, `roles/modelarmor.user`
+- `roles/agentregistry.viewer`, `roles/cloudapiregistry.viewer`
+- `roles/storage.objectViewer`
+
+## Deployment Paths
+
+| Path | Pickle? | Build Control? | Use Case |
+|------|---------|---------------|----------|
+| Source (`package_spec`) | Yes (cloudpickle) | No | Simple recipes, quick test |
+| Dockerfile (`image_spec`) | No | Partial (AE builds) | Custom deps |
+| Container (`container_spec`) | No | Full (CI builds) | Pre-built images |
+
+**Source deploy** (cloudpickle) is the most reliable path for simple agents. The Dockerfile and container paths have additional constraints around build conventions and org policies that may cause issues in enterprise environments.
+
 ## Key Constraints
 
 | Constraint | Detail |
@@ -93,6 +125,8 @@ For agent identity setup and IAM configuration, see [Agent Identity](https://doc
 | `GOOGLE_CLOUD_LOCATION` | Allowed -- pass via `env_vars` to override AE default |
 | Python only | Go/Java/TS ADK agents cannot deploy to AE today |
 | Source deploy | Uses `cloudpickle` -- keep dependency graphs simple |
+| `InMemoryArtifactService` | Default artifact service -- artifacts lost between requests |
+| No VPC | Cannot egress to private network resources |
 
 ## Cloud Run Alternative
 

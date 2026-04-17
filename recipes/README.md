@@ -10,6 +10,8 @@ Self-contained [Google ADK](https://adk.dev) agent recipes. Each recipe is a sin
 | [search](search/) | Grounded research agent | `google_search` | Vertex AI project |
 | [maps](maps/) | Places, weather, and routes | Maps MCP (Grounding Lite) | Vertex AI + Maps API |
 | [registry](registry/) | Discover and invoke registered agents | Agent Registry MCP | Vertex AI + Agent Registry API |
+| [bigquery](bigquery/) | Query and explore datasets | BigQuery MCP | Vertex AI + BigQuery API |
+| [mcp](mcp/) | Custom MCP server on Cloud Run | echo, trace, time (FastMCP) | Vertex AI + Cloud Run MCP server |
 
 ## Quick Start
 
@@ -34,6 +36,9 @@ gcloud services enable cloudapiregistry.googleapis.com
 
 # For registry recipe -- enable Agent Registry
 gcloud services enable agentregistry.googleapis.com
+
+# For bigquery recipe -- enable BigQuery
+gcloud services enable bigquery.googleapis.com
 ```
 
 ### 2. Install and Configure
@@ -98,6 +103,9 @@ recipes/
   search/agent.py         # Google Search grounding
   maps/agent.py           # Maps MCP integration
   registry/agent.py       # Agent Registry MCP
+  bigquery/agent.py       # BigQuery MCP
+  mcp/agent.py            # Custom MCP server (Cloud Run)
+  mcp/idtoken.py          # ID token credential acquisition
 ```
 
 ## Design Principles

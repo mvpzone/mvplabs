@@ -12,4 +12,5 @@ dependencies = [
     "uvicorn",
     "a2a-sdk",
     "python-dotenv",
+    "fastmcp>=2.13.1",
 ]
