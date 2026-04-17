@@ -106,6 +106,8 @@ recipes/
   bigquery/agent.py       # BigQuery MCP
   mcp/agent.py            # Custom MCP server (Cloud Run)
   mcp/idtoken.py          # ID token credential acquisition
+  mcpserver/server.py     # FastMCP server (deploy target for mcp recipe)
+  mcpserver/Dockerfile    # Container image for MCP server
 ```
 
 ## Design Principles

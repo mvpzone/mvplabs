@@ -28,7 +28,7 @@ What time is it in America/New_York?
 ## Requirements
 
 - Vertex AI project
-- A FastMCP server deployed on Cloud Run (see `mcpserver/` in the source repo for an example)
+- A FastMCP server deployed on Cloud Run (see [`mcpserver/`](../mcpserver/))
 
 ```bash
 # IAM -- grant your SA the Cloud Run invoker role
