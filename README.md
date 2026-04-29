@@ -1,26 +1,39 @@
 # mvplabs
 
-**mvplabs** is a collaborative space for hands-on labs, tutorials, and reusable components related to cloud-native technologies and security. This repository serves as a collection of recipes and examples for exploring, learning, and demonstrating various concepts and tools.
+Hands-on labs and reusable recipes for cloud-native security and agentic AI. Each lab is a self-contained, runnable demonstration of one idea — small enough to read, big enough to learn from.
 
-## Goals
+## Labs
 
-The primary goals of this project are:
+| Lab | What it shows |
+|-----|---------------|
+| [Lab_6_1_Model_Armor](Lab_6_1_Model_Armor/) | Prompt injection defenses and guardrails with Model Armor |
+| [Lab_8_1_ADK_Observer](Lab_8_1_ADK_Observer/) | Observability for Google ADK agents — notebook + SQL for inspecting agent behavior |
+| [Lab_4_1_AgentSpace_Security](Lab_4_1_AgentSpace_Security/) | AgentSpace deployment security (in progress) |
 
-* **Learning and Exploration:** To provide a hands-on environment for learning and experimenting with new technologies, platforms, and security practices.
-* **Collaboration:** To foster collaboration by sharing knowledge, code, and configurations in a reusable and easy-to-consume format.
-* **Rapid Prototyping:** To offer a collection of building blocks and recipes that can be used to quickly prototype and test new ideas and solutions.
-* **Best Practices:** To document and demonstrate best practices for security, infrastructure, and application development in a cloud-native world.
+## ADK Recipes
 
-## Structure
+[`recipes/`](recipes/) — self-contained [Google ADK](https://adk.dev) agent recipes. Each recipe is a single folder you can run locally or deploy to Google Cloud.
 
-This repository is organized into different labs and recipes, each focusing on a specific technology or use case. You can find examples for various platforms and tools, including:
+| Recipe | Tools |
+|--------|-------|
+| [hello](recipes/hello/) | Time-telling agent (local tool) |
+| [search](recipes/search/) | Grounded research with `google_search` |
+| [maps](recipes/maps/) | Places, weather, routes via Maps MCP |
+| [registry](recipes/registry/) | Discover and invoke registered agents |
+| [bigquery](recipes/bigquery/) | Query datasets via BigQuery MCP |
+| [gcs](recipes/gcs/) | List buckets and read objects |
+| [mcp](recipes/mcp/) | Custom MCP server on Cloud Run |
 
-* [ADK Recipes](recipes/) -- self-contained Google ADK agent recipes (Maps MCP, Search, Agent Registry)
-* Security tools and practices
-* And much more...
+See [recipes/README.md](recipes/README.md) for prerequisites and quick start.
 
-Feel free to explore the different directories and examples to get started.
+## Why this exists
+
+Three reasons:
+
+- **Showing beats telling.** The labs are the proof. Frameworks describe the problem; runnable code demonstrates the answer.
+- **Sharing what works.** Patterns I've used in real deployments, distilled into the smallest reproducible form.
+- **A place to tinker.** New tools, new threats, new ideas — this is the bench.
 
 ## Contributing
 
-Contributions are welcome! Please refer to the `CONTRIBUTING.md` file for more information on how to contribute to this project.
+PRs welcome. See [`CONTRIBUTING.md`](CONTRIBUTING.md). Code of Conduct applies.
