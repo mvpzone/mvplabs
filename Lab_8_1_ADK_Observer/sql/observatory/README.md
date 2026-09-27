@@ -23,6 +23,7 @@ Individual `.sql` files for loading into BQ Studio. Each file is a single query 
 | 2 | `lab2_02_behavioral_anomaly.sql` | Flagged events + high token consumption | `session_events_log` |
 | 3 | `lab2_03_attestation_integrity.sql` | L1/L2/L3 status across all events | `session_events_log` |
 | 4 | `lab2_04_token_timeline.sql` | Token volume over time (detect spikes) | `session_events_log` |
+| 5 | `lab2_05_sensitivity_retention.sql` | Sensitive sessions (taints), scrub conformance, planned TTL expiry | `session_ledger`, `session_events_log` |
 
 ## How to Use in BQ Studio
 
