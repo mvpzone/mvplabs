@@ -10,6 +10,14 @@ Hands-on labs and reusable recipes for cloud-native security and agentic AI. Eac
 | [Lab_8_1_ADK_Observer](Lab_8_1_ADK_Observer/) | Observability for Google ADK agents — notebook + SQL for inspecting agent behavior |
 | [Lab_4_1_AgentSpace_Security](Lab_4_1_AgentSpace_Security/) | AgentSpace deployment security (in progress) |
 
+## Katas
+
+[`kata/`](kata/) — single-lesson exercises: one bug, one fix, one test. Walkthroughs on [devnull.fyi/labs](https://devnull.fyi/labs/).
+
+| Kata | Lesson |
+|------|--------|
+| [strict-mocks](kata/strict-mocks/) | A mock that answers anything proves only that your code asked |
+
 ## ADK Recipes
 
 [`recipes/`](recipes/) — self-contained [Google ADK](https://adk.dev) agent recipes. Each recipe is a single folder you can run locally or deploy to Google Cloud.
