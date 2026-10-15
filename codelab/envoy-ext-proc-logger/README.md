@@ -3,7 +3,7 @@
 The code for the codelab
 [Envoy and a Stub ext_proc That Logs Every Request](https://devnull.fyi/labs/envoy-and-a-stub-ext-proc-that-logs-every-request/).
 
-Envoy runs in Docker with the `ext_proc` filter in front of a stand-in backend. A small Python gRPC processor logs one
+Envoy runs in a container with the `ext_proc` filter in front of a stand-in backend. A small Python gRPC processor logs one
 line per request and, in `v2/`, applies one rule in observe or enforce mode.
 
 ```
@@ -15,7 +15,7 @@ requirements.txt  grpcio, xds-protos and protobuf, pinned together
 
 ## Run it
 
-Needs Docker, Python 3.12 or later, and two terminals.
+Needs Docker (or colima with `nerdctl`, see below), Python 3.12 or later, and two terminals.
 
 ```bash
 python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
@@ -28,4 +28,6 @@ curl -s localhost:10000/hello
 docker rm -f l1-envoy
 ```
 
-On colima use `--add-host=host.docker.internal:192.168.5.2`. The walkthrough has every step and its output.
+On colima use `--add-host=host.docker.internal:192.168.5.2` (`host-gateway` resolves to the VM, not your Mac), run each
+`docker` command as `colima nerdctl -- ` with the same flags, and keep this folder under your home directory (colima
+shares only `~` with the VM). The walkthrough has every step and its output.
