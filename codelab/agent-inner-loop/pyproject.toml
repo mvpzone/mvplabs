@@ -1,0 +1,24 @@
+[project]
+name = "agent-inner-loop"
+version = "0.1.0"
+description = "An ADK agent with a local tool, an MCP tool, hermetic tests, and a Cloud Run deploy."
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "google-adk==2.12.0",
+    "fastmcp==4.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+    "pytest-asyncio==1.4.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = ["ignore:\\[EXPERIMENTAL\\]:UserWarning"]
+
+[tool.uv]
+package = false
