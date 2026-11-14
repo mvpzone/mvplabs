@@ -17,6 +17,7 @@ Hands-on labs and reusable recipes for cloud-native security and agentic AI. Eac
 | Kata | Lesson |
 |------|--------|
 | [strict-mocks](kata/strict-mocks/) | A mock that answers anything proves only that your code asked |
+| [hermetic-suite](kata/hermetic-suite/) | A suite that degrades cleanly on `OSError` still fails hermeticity unless the harness tracks every outbound destination |
 
 ## ADK Recipes
 

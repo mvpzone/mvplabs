@@ -6,3 +6,4 @@ code side by side, and a walkthrough on [devnull.fyi/labs](https://devnull.fyi/l
 | Kata | Lesson | Walkthrough |
 |---|---|---|
 | [strict-mocks](strict-mocks/) | A mock that answers anything proves only that your code asked | [15 min](https://devnull.fyi/labs/your-mock-answers-methods-the-sdk-doesnt-have/) |
+| [hermetic-suite](hermetic-suite/) | Block outbound DNS and sockets, attribute violations to the owning test, and catch env leaks | [20 min](https://devnull.fyi/labs/make-the-suite-hermetic/) |
