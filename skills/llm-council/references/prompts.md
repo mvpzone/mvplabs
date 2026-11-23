@@ -18,6 +18,17 @@ QUESTION:
 ---
 ```
 
+## Lenses (role line for the Member template)
+
+- contrarian: "Argue from the strongest objection: what will fail or sound like marketing?"
+- first-principles: "Reason from first principles: what is the irreducible idea, stripped of jargon?"
+- executor: "Take the executor view: what would an operator actually do or repeat tomorrow?"
+- outsider: "Take the outsider view: a smart non-expert who has never heard these terms."
+- storyteller: "Take the storyteller view: what image or phrase sticks in memory?"
+
+Write each filled prompt to a file and pass the file to the member (no shell-quoting
+of the fenced text). The Reviewer prompt is ~8-9KB for 5 answers.
+
 ## Reviewer (Stage 2)
 
 ```
