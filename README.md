@@ -6,9 +6,9 @@ Hands-on labs and reusable recipes for cloud-native security and agentic AI. Eac
 
 | Lab | What it shows |
 |-----|---------------|
-| [Lab_6_1_Model_Armor](Lab_6_1_Model_Armor/) | Prompt injection defenses and guardrails with Model Armor |
-| [Lab_8_1_ADK_Observer](Lab_8_1_ADK_Observer/) | Observability for Google ADK agents — notebook + SQL for inspecting agent behavior |
-| [Lab_4_1_AgentSpace_Security](Lab_4_1_AgentSpace_Security/) | AgentSpace deployment security (in progress) |
+| [Lab_6_1_Model_Armor](labs/Lab_6_1_Model_Armor/) | Prompt injection defenses and guardrails with Model Armor |
+| [Lab_8_1_ADK_Observer](labs/Lab_8_1_ADK_Observer/) | Observability for Google ADK agents — notebook + SQL for inspecting agent behavior |
+| [Lab_4_1_AgentSpace_Security](labs/Lab_4_1_AgentSpace_Security/) | AgentSpace deployment security (in progress) |
 
 ## Katas
 
